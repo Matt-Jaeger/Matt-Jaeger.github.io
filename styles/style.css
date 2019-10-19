@@ -15,7 +15,8 @@ h1 { font-size: 3.4rem;
 h2	{font-size: 3.4rem; }
 	 /* Added font size for the second header */
 main {max-width: 1000px ;
-	/* Makes it so text wont run past 1000 pixels, roughly the width of the picture. */}
+	 font-size: 2.0rem;
+	/* Makes it so text wont run past 1000 pixels, roughly the width of the picture. */ }
 
 p { font-size: 2.0rem; }
 
