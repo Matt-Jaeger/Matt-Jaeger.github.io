@@ -1,0 +1,60 @@
+html {
+ font-size: 10px;
+ font-family: Times, Times New Roman, Arial, sans-serif;
+ background-color: 	#FAEBD7;
+}
+
+header li { float: left;
+			padding: 10px;
+			display: block;
+			background-color: green; }
+		/* Adding a floating horizontal nav bar for the list, mostly as a placeholder because it is currently just my name. */
+
+h1 { font-size: 3.4rem; 
+	 background-color: #660066;
+	 color: #ffff00;
+	 border-bottom-style: solid;
+	 border-bottom-color: #ffff00;
+	 border-width: .5rem ;
+	 /* These settings were for the border to set where it is, its syle and its width.  Possible to do more styles for other borders. Also interesting to note that border-width seemed to add down past the orginal space it was taking */ 
+	 line-height:1.5 ;}
+	 
+h3	{font-size: 3.0rem; }
+	 /* Added font size for the second header */
+main {max-width: 1000px ;
+	 font-size: 2.0rem;
+	/* Makes it so text wont run past 1000 pixels, roughly the width of the picture. */ }
+
+section { color:green;
+		  padding: 1px;
+		  font-family: Arial, Helvetica, sans-serif;
+		  font-size: 2.0rem; }
+	/* changed the font family, color, and size.  */
+	
+p { font-size: 2.0rem; }
+
+p {  color: Darkslategray; }
+
+li { font-size: 2.0rem; }
+
+figcaption { font-size: 1.8rem; }
+
+li { line-height: 1.4; }
+
+aside { background-color: #00FFFF;
+		font-size: 2.5rem;
+		border-style: solid; 
+		border-width: 4px; }
+	/* Gave the classes list a background color, larger font size and a border. */
+
+a:link { color: #009933; }
+a:visited { color: #cc9900; }
+a:hover { color: #ff9900; background-color: #0000ff; text-decoration: none; }
+a:active { color: #0000ff; background-color: #ff9900; text-decoration: none; }
+
+footer { color: black;
+		padding: 0px;
+		font-family: Arial, sans-serif;
+		font-size: 1.3rem; }
+	/* Only the copyright is here right now, just made it smaller and a different font */
+
