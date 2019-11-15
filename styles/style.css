@@ -2,10 +2,6 @@ html { 	background-color:#567895;
  font-size: 10px;
  font-family: Times, Times New Roman, Arial, sans-serif; }
  
-header li { display: inline;
-			padding: 10px; }
-		/* Put the header list horizontal instead of vertical and gave them some spacing so they were not smushed. */
-
 
 h1 { text-align: center; 
 	 font-size: 3.4rem; 
@@ -16,6 +12,17 @@ h1 { text-align: center;
 	 border-width: .5rem ;
 	 /* These settings were for the border to set where it is, its syle and its width.  Possible to do more styles for other borders. Also interesting to note that border-width seemed to add down past the orginal space it was taking */ 
 	 line-height:1.5 ;}
+
+nav#bit112-nav li {
+
+			display: inline-block;
+			width: 100px;
+			padding: 10px;
+			border-style: solid;
+			border-color: white;
+			}
+		/* Put the list horizontal instead of vertical and gave them some spacing so they were not smushed. */
+
 	 
 h2	{ font-size: 3.0rem; }
 	 /* Added font size for the second header */
@@ -32,7 +39,7 @@ section {color:white;
 
 p 		{ font-size: 2.0rem; }
 
-p 		{  color: Darkslategray; }
+p 		{  color: white; }
 
 li { font-size: 2.0rem; }
 
