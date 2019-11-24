@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>Search Engine Report</title>
+    <style>
+      html {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 10px;
+      }
+      body {
+        max-width: 1000px;
+        margin: auto;
+        font-size: 1.9em;
+        padding: 1em;
+      }
+      footer {
+        border-top: 6px solid #999;
+        margin-top: 3em;
+        padding-top: 2em;
+      }
+      header h1 {
+        background-color: #336699;
+        color: #ccc;
+        padding: 0.5em;
+        border-top: 5px solid #6699cc;
+        border-radius: 10px;
+        margin-left: -1em;
+        margin-right: -1em;
+      }
+      header nav ul {
+        list-style-type: none;
+        background-color: #999;
+      }
+      header nav ul li {
+        display: inline-block;
+      }
+      header nav ul li a {
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+      }
+      header nav ul li a:hover {
+        background-color: #666;
+      }
+      dt {
+        border-top: 2px solid #000;
+        font-weight: bold;
+        margin-top: 1em;
+        padding-top: 1em;
+      }
+      #top-dl dd {
+        padding-top: 1em;
+        padding-bottom: 1em;
+      }
+      #top-dl dd:last-child {
+        border-bottom: 2px solid #000;
+        margin-bottom: 2em;
+        padding-bottom: 1em;
+        margin-left: inherit;
+        padding-left: 2em;
+      }
+      .smaller {
+        font-size: 0.8em;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        padding: 6px;
+      }
+      td.unused {
+        background-color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Search engine report</h1>
+      <div w3-include-html="nav.html"></div>
+      <!-- reference the location of your nav.html -->
+    </header>
+    <main>
+      <section>
+        <h2>Search engines</h2>
+        <dl id="top-dl">
+          <dt>How does a search engine work?</dt>
+          <dd>A search engine tries to match the users search with the best possible websites.  It does this by searching (or crawling) where it looks 
+		  through the code and the content of sites to find relevant text and images. The search engine will index this information for future searches. 
+		  After finding websites, the search engine will rank those sites based on what it believes to be the most relevant to the searcher. </dd>
+          <dt>
+            Why do different search-engines give different ranking to websites
+            for the same search phrase?
+          </dt>
+          <dd>Search engines have different algorithms which put a different amount of weight on each factor that they consider.
+		  Google for example puts much less emphasis on metadata, while other major search engines (Bing, Yahoo, and Baido)
+		  do include metadata as part of their search ranking.  The same goes for other factors such as the age of the domain 
+		  name and the quality and quantity of backlinks.</dd>
+          <dt>What is a &lt;meta /&gt; tag?</dt>
+          <dd>Meta tags are code that helps search engines figure out what the content of a particular site is.</dd>
+          <dt>What is the purpose for Keyword and Description meta tags?</dt>
+          <dd> The keyword meta tag is a list of just that, keywords, which help tell the search engine the relevant
+		  or important parts of your pages. The description meta tag is just a brief description of your page and its content.</dd>
+          <dt>Why might you include meta tags in your pages?</dt>
+          <dd>Meta tags will help with some search engine rankings and are used to display relevant text to searchers.</dd>
+          <dt>
+            Do meta tags make your pages more easily searchable or improve its
+            ranking?
+          </dt>
+          <dd>With Google being the search engine that over 90% of searches are made on and the fact that they 
+		  do not put emphasis on meta tags (some sources even say too many will hurt your ranking) 
+		  you will want to be careful with which meta tags you use. Doing this will optimize your rankings 
+		  on other search engines such as bing or yahoo, while not affecting your google ranking. </dd>
+          <dt>
+            What are several ways that you can publicize your personal website
+            project and make it more visible on the web?
+          </dt>
+          <dd>To make my website more visible on the web, I would want to include keyword and  description metatags.
+		  I would also want my pages to have clear and concise content that would show up well on a search. 
+		  Lastly, any pages that did not have a ton of relevant information on them, could be given the noindex attribute,
+		  which would prevent them from being indexed and possibly increase the sites ranking. </dd>
+        </dl>
+      </section>
+
+      <section>
+        <h2>Comparable websites</h2>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>URL</th>
+              <th>Words used in page titles and headings</th>
+              <th>
+                Words used in <em>Description</em> meta tags
+                <span class="smaller"
+                  >(or "none" if no description tags are used)</span
+                >
+              </th>
+              <th>
+                Words used in <em>Keyword</em> meta tags
+                <span class="smaller"
+                  >(or "none" if no keyword tags are used)</span
+                >
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th rowspan="2">Zulus Games</th>
+              <td colspan="4">http://www.zulusgames.com</td>
+            </tr>
+            <tr>
+              <td class="unused">&nbsp;</td>
+              <td>Zulus Board Game Cafe, Events, Menu</td>
+              <td>Shop Zulus Board Game Cafe to find great deals on all kinds of trading card games, board games, table top games, and more! Shop with confidence at your local Bothell game store<td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <th rowspan="2">Mox Boarding House</th>
+              <td colspan="4">https://www.moxboardinghouse.com/</td>
+            </tr>
+            <tr>
+              <td class="unused">&nbsp;</td>
+              <td>Mox Boarding House, Blog, Shop, About</td>
+              <td>Mox Boarding House offers a unique gaming experience like no other! Both locations have a huge selection of games, a game library, and a full restaurant.</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <th rowspan="2">Friend & Foe Board Game Cafe</th>
+              <td colspan="4">https://www.friendandfoebgc.com/<td>
+            </tr>
+            <tr>
+              <td class="unused">&nbsp;</td>
+              <td>Friend & Foe Board Game Cafe COME AS FRIENDS. PLAY AS FOES.</td>
+              <td>None.</td>
+              <td>None.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Research-based updates</h2>
+        <dl id="bottom-dl">
+          <dt>
+            Based on your research, suggest appropriate updates to your
+            website's titles and headings.
+          </dt>
+          <dd><p>My headings will be in the format of Page | Website, for example Shop | Phoenix Board Game Cafe or Menu | Phoenix Board game Cafe</p></dd>
+          <dt>
+            Based on your research, create a Description meta tag and a Keywords
+            meta tag (and an Author meta tag) for inclusion your site.
+          </dt>
+          <dd>
+            <p><strong>Description:</strong></p>
+            <p>Phoenix Board Game Cafe offers tabletop games, trading card games, and a full menu. </p>
+          </dd>
+          <dd>
+            <p><strong>Keywords:</strong></p>
+            <p>Board Games, Restaurant, Menu, Trading card games</p>
+          </dd>
+          <dd>
+            <p><strong>Author:</strong></p>
+            <p>Phoenix Board Game Cafe</p>
+          </dd>
+          <dt>
+            List three techniques to publicize your site that makes sense for
+            its purpose and its audience.
+          </dt>
+          <dd>
+            <p>Clear and concise pages.</p>
+            <p>Noindex attribute on sites with little relevant information.</p>
+            <p>Use description meta tag, maybe don't use keyword meta tag</p>
+          </dd>
+        </dl>
+      </section>
+    </main>
+    <footer>
+      &copy; Matt Jaeger
+    </footer>
+    <!-- Enable includes -->
+    <script src="../scripts/includes.js"></script>
+
+    <!-- If you are wanting to use includes throughout your site, you'll have to change the above link to be whatever 
+      location your script is in. For me, it would be "/bit112-fall-2019/scripts/includes.js" because my site is 
+      https://alboss-cascadia.github.io/bit112-fall-2019/ -->
+
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>
