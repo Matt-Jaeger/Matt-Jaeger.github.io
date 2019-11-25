@@ -1,0 +1,24 @@
+.container{
+    color: #c5c4c3;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.3em;
+    font-weight: bold;
+    letter-spacing: 2px; 
+}
+
+ h2{
+    font-size: 2em;
+    line-height: 1.1em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    /*color: #ba6225;*/
+}
+
+.home-product-section p, .contact-details-info p{
+    color: #c5c4c3;
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 1.7em;
+    
+}

@@ -1,0 +1,294 @@
+
+
+
+
+/*This sets the navigation in a flex box and sets the font and size if the text inside*/
+.site-navigation{
+	font-family: 'Rock Salt', cursive;
+	font-size: 2em;
+	width: 100%;
+	padding: 1%;
+	display: flex;
+}
+
+/* flex-items  - this sets the text in flex items to align center. */
+nav > div {
+	text-align: center;
+	
+	/*grow shrink basis - this tells the flext items andt the flex box what to do when the box shrinks, grows, or stays the same.*/
+  flex: 0 1 400px;
+  }
+
+/*This sets the default color of the links in the nav bar.*/
+  .site-navigation a{
+	color:#FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+	letter-spacing: 3px;
+  }
+
+/*This changes the color of the link when hovering over it.*/
+  .site-navigation a:hover{
+	color: #BA6225;
+  }
+
+/*This changes the color of the current page link.*/
+  .site-navigation .current{
+	color: #CC4F41;
+}
+
+.buy-button{
+    background-color: #CC4F41;
+    border: none;
+    padding: 3% 6%;
+    margin: 5%;
+    text-align: center;
+    font-size: 1.3em;
+    display: inline-block;
+    box-shadow: 0 8px 16px 0 #1a181b, 0 6px 20px 0 #1a181b;
+}
+
+.buy-button a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+input, textarea{
+	width: 80%;
+	padding: 3% 4%;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: none;
+	background-color: #e5cda4;
+	opacity: 80%;
+	color: black;
+  }
+
+  #submit{
+	background-color: #ba6625;
+	text-align: center;
+	font-size: 1.3em;
+	color: #FFFFFF;
+	width: 40%;
+	float: right;
+	margin-right: 20%
+	
+  }
+
+
+  
+.container{
+	
+    background-image: url("../images/background.gif");
+    /*This lets the background image be responsive.*/
+    background-position: left top;
+    background-attachment: fixed;
+    margin-left: 22%;
+    margin-right: 22%;
+    padding-top: 1%;
+		
+}
+
+.header-bar{
+    /*background-color: #FFCFE8;*/
+    text-align: center;
+    height: 10%;
+    padding-bottom: 2%;
+}
+
+.logo{
+    width: 35%;
+}
+
+  /*Shopping card icon style*/
+.header-shopping-cart{
+      float: right;
+      width: 2%;
+  }
+
+/*This starts the grid layout*/
+
+/*The outer grid with only one column inside which there will be a nested grid. 1 column, rows on auto. */
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+}
+
+.home-product-section{
+    margin: 5%;
+}
+
+/*This is the first nested grid layout for the Store section. */
+.grid-container-1{
+    margin: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*grid-template-columns: repeat(2, 1fr) 2fr; use this to position all images in the 3rd column */
+    grid-template-rows: 25%;
+    grid-gap: 2%;
+}
+
+
+.grid-item img{
+    padding: 3%;
+    background-color: #800020;
+    /*width: 50%;*/
+}
+
+.grid-item{
+    text-align: center;
+}
+
+/*This styles the layout of the about section.*/
+.home-testimonials{
+    margin: 5%;
+    padding: 2%;
+    background-color: #E5CDA4;
+    opacity: 80%;
+    color: black;
+}
+
+.grid-container-story{
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 25%;
+    grid-gap: 2%;
+    padding: 2%;
+}
+
+/*Styling the grid of the about section. */
+.grid-container-2{
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 25%;
+    grid-gap: 2%;
+    padding: 2%;
+}
+
+/*Adding right border to the testimonial boxes. */
+.about-testimonial-box{
+    border-right: 1px solid black;
+    height: 400%;
+    
+}
+
+.our-story, .testimonials{
+    margin: 2%;
+}
+
+.about-testimonial-box-3, .about-testimonial-box{
+    padding: 2%;
+}
+
+.grid-container-3{
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100%;
+    grid-gap: 2%;
+    padding: 4%; 
+}
+
+.contact-info{
+    margin: 5%;
+}
+
+.contact-details-info{
+    /*background-color: #E5CDA4;*/
+    opacity: 80%;;
+    color: white;
+    text-align: left;
+    line-height: 2em;
+}
+
+footer{
+    background-color: #542c1d;
+    opacity: 90%;
+    text-align: center;
+}
+
+footer p, footer a{
+    color: #FFFFFF;
+}
+
+footer a:hover{
+    color: #ba6225;
+}
+
+
+
+.container{
+    color: #c5c4c3;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.3em;
+    font-weight: bold;
+    letter-spacing: 2px; 
+}
+
+ h2{
+    font-size: 2em;
+    line-height: 1.1em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+	color: #FFFFFF;
+    /*color: #ba6225;*/
+}
+
+.home-product-section p, .contact-details-info p{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 1.7em;
+    
+}
+
+/*Sets the Navbar to vert and sets background color and text color*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #000000;
+  
+}
+
+li a {
+  display: block;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #FFFFFF;
+}
+
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+/*tells Upcoming events navbar where to be*/
+.vert-navbar {
+  position: relative;
+  right: 300px;
+  bottom: 200px;
+}
+
+/*tells store picture where to be*/
+.storepic {
+  position: relative;
+  left: 225px;
+  bottom: 300px;
+}
+/*tells google calendar where to be*/
+.googcalendar {
+	position: relative;
+	left: 160px;
+	top: 250px;
+	padding-bottom: 300px;
+}
