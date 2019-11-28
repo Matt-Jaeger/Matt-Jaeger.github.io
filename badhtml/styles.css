@@ -1,0 +1,15 @@
+body {
+  background-image: url("abstract-color-rainbow-background-blur_75163-845.jpg"), url("92320_rainbow-background-png.png"), url("92331_rainbow-background-png.jpg");
+  
+  background-repeat: no-repeat;
+}
+
+h2 {
+	font-size: 700px;
+	color: yellow;
+}
+
+h1 {
+	font-size: 2px;
+	font-color: black;
+}
