@@ -301,3 +301,15 @@ a.buy-button {
     color: initial;
 	
 }
+
+.about {
+	
+	color: white;
+}
+
+.storepic-about {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
