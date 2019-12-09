@@ -9,6 +9,7 @@
 	width: 100%;
 	padding: 1%;
 	display: flex;
+	
 }
 
 /* flex-items  - this sets the text in flex items to align center. */
@@ -16,7 +17,7 @@ nav > div {
 	text-align: center;
 	
 	/*grow shrink basis - this tells the flext items andt the flex box what to do when the box shrinks, grows, or stays the same.*/
-  flex: 0 1 400px;
+  flex: 1 0 auto;
   }
 
 /*This sets the default color of the links in the nav bar.*/
@@ -81,11 +82,10 @@ input, textarea{
 	
     background-image: url("../images/background.gif");
     /*This lets the background image be responsive.*/
-    background-position: left top;
-    background-attachment: fixed;
     margin-left: 22%;
     margin-right: 22%;
     padding-top: 1%;
+	min-width:500px;
 		
 }
 
@@ -108,12 +108,7 @@ input, textarea{
 
 /*This starts the grid layout*/
 
-/*The outer grid with only one column inside which there will be a nested grid. 1 column, rows on auto. */
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
-}
+
 
 .home-product-section{
     margin: 5%;
@@ -200,7 +195,7 @@ input, textarea{
     /*background-color: #E5CDA4;*/
     opacity: 80%;;
     color: white;
-    text-align: left;
+    text-align:  ;
     line-height: 2em;
 }
 
@@ -274,21 +269,35 @@ li a:hover {
 
 /*tells Upcoming events navbar where to be*/
 .vert-navbar {
-  position: relative;
-  right: 300px;
-  bottom: 200px;
+  margin-top:63px;
 }
 
 /*tells store picture where to be*/
 .storepic {
-  position: relative;
-  left: 225px;
-  bottom: 300px;
+  margin-left:50px;
+  width: 100%;
+  min-width:500px;
 }
+
+.homebody {
+	display: flex;
+	flex: 1 0 auto;
+}
+
 /*tells google calendar where to be*/
 .googcalendar {
 	position: relative;
 	left: 160px;
 	top: 250px;
 	padding-bottom: 300px;
+}
+
+a.buy-button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+	
 }
